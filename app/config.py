@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     app_name: str = "ai-incident-agent"
     environment: str = "local"
     log_level: str = "INFO"
-    dry_run: bool = True
+    dry_run: bool = True 
 
 
 @lru_cache 
