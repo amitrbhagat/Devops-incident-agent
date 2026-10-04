@@ -25,4 +25,3 @@ def test_correlation_id_is_echoed_back():
 def test_correlation_id_is_generated_when_missing():
     response = client.get("/health")
     assert len(response.headers["X-Correlation-ID"]) == 32
-    
